@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# While Loop
+X=1
+while [ $X -le 99 ]
+do
+  if (( $X % 2 == 1 ))
+  then
+    echo $X
+  fi
+  X=$((X+1))
+done;
+
+# For Loop
+
+START=1
+END=99
+for ((i=START; i<END; i++))
+do
+  if (( $i % 2 == 1 ))
+  then
+    echo -n "$N"
+  fi
+done;
