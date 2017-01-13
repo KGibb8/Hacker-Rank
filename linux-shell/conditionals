@@ -1,0 +1,10 @@
+#!/bin/bash
+function yesno {
+  if [ "$1" == "n" ] || [ "$1" == "N" ]; then
+    echo "NO"
+  elif [ "$1" == "y" ] || [ "$1" == "Y" ]; then
+    echo "YES"
+  fi
+}
+yesno Y
+yesno N
